@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\PlayerController.cs">
+    <Files>
+      <File FileName="Assets\script\PlayerController.cs" Line="1" Column="1" />
+      <File FileName="Assets\script\Move2Player.cs" Line="1" Column="1" />
+      <File FileName="Assets\script\controlMouse.cs" Line="1" Column="1" />
+      <File FileName="Assets\script\SpawnEnemy.cs" Line="1" Column="1" />
+      <File FileName="Assets\script\ZombieController.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
