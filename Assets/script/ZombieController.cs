@@ -86,6 +86,6 @@ public class ZombieController : MonoBehaviour {
 	public  void Dead()
 	{
         anim.SetBool("isDead", true);
-        Destroy (gameObject,0.9f);
+        Destroy (gameObject,1.9f);
 	}
 }

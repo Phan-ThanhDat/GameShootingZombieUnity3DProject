@@ -54,23 +54,43 @@ public class PlayerController : MonoBehaviour {
 	{
         if (Time.time >= lastFireTime + fireTime)
         {
-            
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+#if UNITY_IOS || UNITY_ANDROID 
+            ray = Camera.main.ScreenPointToRay(Input.mousePosition); 
 
             RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);    //test change
+           
 
             if (Physics.Raycast(ray, out hit))
             {
                 
                 if (hit.transform.tag.Equals("Zombie"))
                 {
+                    ebug.Log("Mobile..");
                     hit.transform.gameObject.GetComponent<ZombieController>().getHit(damage);
                     
                 }
 
             }
 
-            
+
+#else
+            RaycastHit hit;
+
+
+            if (Physics.Raycast(gunHead.transform.position, gunHead.transform.forward,out hit ))
+            {
+
+                if (hit.transform.tag.Equals("Zombie"))
+                {
+                    Debug.Log("Other..");
+                    hit.transform.gameObject.GetComponent<ZombieController>().getHit(damage);
+
+                }
+
+            }
+#endif 
 
             updateFireTime();
         }
