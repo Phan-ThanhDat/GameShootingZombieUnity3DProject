@@ -3,6 +3,7 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 
+    //test change for git
 	public int damage =1;
 	public float fireTime = 0.3f;
 	private float lastFireTime= 0;
